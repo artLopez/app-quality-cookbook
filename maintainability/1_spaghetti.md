@@ -36,7 +36,7 @@ Let's configure maven so we can run the app by adding the following dependency i
     <groupId>org.codehaus.mojo</groupId>
     <artifactId>exec-maven-plugin</artifactId>
     <configuration>
-          <mainClass>edu.csumb.app.Main</mainClass>
+          <mainClass>com.mycompany.app.Main</mainClass>
     </configuration>
    </plugin>
 
