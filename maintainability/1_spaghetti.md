@@ -27,8 +27,6 @@ feature_c:
 
 Java refers to a file like this as a [resource](http://docs.oracle.com/javase/tutorial/deployment/webstart/retrievingResources.html), and Maven defines a [standard "resources" directory](http://maven.apache.org/guides/getting-started/index.html#How_do_I_add_resources_to_my_JAR), eg /home/vagrant/my-app/src/main/resources/features.yml
 
-The "os" field defines the operating system name for which a feature is enabled. The "percentage" field defines the percentage of people for which a feature is enabled.
-
 Let's configure maven so we can run the app by adding the following dependency into your pom.xml. 
 
 ```xml
@@ -39,9 +37,9 @@ Let's configure maven so we can run the app by adding the following dependency i
           <mainClass>com.mycompany.app.Main</mainClass>
     </configuration>
    </plugin>
-
 ```
 
+The "os" field defines the operating system name for which a feature is enabled. The "percentage" field defines the percentage of people for which a feature is enabled.
 
 For example, if the os is "android" and the percentage is "50", 50% of android users should see this feature:
 
