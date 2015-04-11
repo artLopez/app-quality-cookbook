@@ -29,6 +29,20 @@ Java refers to a file like this as a [resource](http://docs.oracle.com/javase/tu
 
 The "os" field defines the operating system name for which a feature is enabled. The "percentage" field defines the percentage of people for which a feature is enabled.
 
+Let's configure maven so we can run the app by adding the following dependency into your pom.xml. 
+
+```xml
+  <plugin>
+    <groupId>org.codehaus.mojo</groupId>
+    <artifactId>exec-maven-plugin</artifactId>
+    <configuration>
+          <mainClass>edu.csumb.app.Main</mainClass>
+    </configuration>
+   </plugin>
+
+```
+
+
 For example, if the os is "android" and the percentage is "50", 50% of android users should see this feature:
 
 ```nohighlight
